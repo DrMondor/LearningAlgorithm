@@ -24,6 +24,9 @@
     <ClInclude Include="SimpleStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LinkLIst.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -33,6 +36,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="SimpleStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkLIst.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

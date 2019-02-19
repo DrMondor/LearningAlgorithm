@@ -14,7 +14,10 @@ typedef PtrToNode Stack;
 int IsEmpty(Stack S);
 Stack CreatStack(void);
 void MakeEmpty(Stack S);
+void DisposeStack(Stack S);
+void Push(int X, Stack S);
 void Pop(Stack S);
+int Top(Stack S);
 
 struct  Node
 {
@@ -47,5 +50,40 @@ void MakeEmpty(Stack S) {
 		{
 			Pop(S);
 		}
+	}
+}
+void Push(int X, Stack S) {
+	
+	PtrToNode TmpCell;
+
+	TmpCell = (PtrToNode)malloc(sizeof(struct Node));
+	if (TmpCell == NULL)
+		printf("out of space");
+	else
+	{
+		TmpCell->Element = X;
+		TmpCell->Next = S->Next;
+		S->Next = TmpCell;
+	}
+}
+
+int Top(Stack S) {
+
+	if (!IsEmpty(S))
+		return S->Next->Element;
+	return 0;
+}
+void Pop(Stack S) {
+
+	PtrToNode FirstCell;
+
+	if (!IsEmpty(S)) {
+		printf("Empty Stack");
+	}
+	else
+	{
+		FirstCell = S->Next;
+		S->Next = S->Next->Next;
+
 	}
 }
