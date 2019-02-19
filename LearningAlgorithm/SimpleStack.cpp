@@ -11,7 +11,7 @@ struct Node;
 typedef struct Node *PtrToNode;
 typedef PtrToNode Stack;
 
-int IsEmpty(Stack S);
+int IsStackEmpty(Stack S);
 Stack CreatStack(void);
 void MakeEmpty(Stack S);
 void DisposeStack(Stack S);
@@ -25,7 +25,7 @@ struct  Node
 	PtrToNode Next;
 };
 
-int IsEmpty(Stack S) {
+int IsStackEmpty(Stack S) {
 	return S  -> Next == NULL;
 }
 Stack CreatStack(void) {
@@ -46,7 +46,7 @@ void MakeEmpty(Stack S) {
 	}
 	else
 	{
-		while (!IsEmpty(S))
+		while (!IsStackEmpty(S))
 		{
 			Pop(S);
 		}
@@ -69,7 +69,7 @@ void Push(int X, Stack S) {
 
 int Top(Stack S) {
 
-	if (!IsEmpty(S))
+	if (!IsStackEmpty(S))
 		return S->Next->Element;
 	return 0;
 }
@@ -77,7 +77,7 @@ void Pop(Stack S) {
 
 	PtrToNode FirstCell;
 
-	if (!IsEmpty(S)) {
+	if (!IsStackEmpty(S)) {
 		printf("Empty Stack");
 	}
 	else
