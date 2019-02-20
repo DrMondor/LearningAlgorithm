@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="LinkLIst.h" />
+    <ClInclude Include="PostfixExpressionTransfer.h" />
     <ClInclude Include="SimpleStack.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -156,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="LearningAlgorithm.cpp" />
     <ClCompile Include="LinkLIst.cpp" />
+    <ClCompile Include="PostfixExpressionTransfer.cpp" />
     <ClCompile Include="SimpleStack.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
