@@ -8,11 +8,8 @@ void InputData();
 
 void InputData() {
 
-	char data[10];
-	cout << "ÇëÊäÈëËãÊ½" << endl;
-	cin >> data;
-	cin.getline(data);
-	cout << data;
-	cin >> data;
+	char name[10];
+	cout << "ÇëÊäÈëËãÊ½\n";
+	cin.getline(name, 10);
 
 }
