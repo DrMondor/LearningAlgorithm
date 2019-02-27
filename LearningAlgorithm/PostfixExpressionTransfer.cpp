@@ -15,6 +15,8 @@ void InputData();
 void InputData() {
 
 	int stack[10];
+	int stackSign = 0;
+	string 
 	char signal[5];
 	char data[20];
 	cout << "ÇëÊäÈëËãÊ½\n";
@@ -25,7 +27,7 @@ void InputData() {
 
 		if (data[i]<9 && data[i] > 0)
 		{
-			
+			stack[stackSign] = 
 		}
 
 
