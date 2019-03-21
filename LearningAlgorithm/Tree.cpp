@@ -15,6 +15,7 @@ struct TreeNode
 
 struct TreeBinaryNode
 {
+	//YU
 	int Element;
 	ptrToNodeBinary Left;
 	Tree right;
